@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.agen.wtp</groupId>
+	<artifactId>WordToPdf</artifactId>
+	<version>0.0.1-wtp</version>
+	<packaging>jar</packaging>
+
+	<name>WordToPdf</name>
+	<description>WordToPdf for All service instance</description>
+
+	<parent>
+		<groupId>com.agen.parent</groupId>
+		<artifactId>parent</artifactId>
+		<version>0.0.1-parent</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+
+	<dependencies>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.3</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sourceforge</groupId>
+			<artifactId>jacob</artifactId>
+			<version>1.18</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration><!-- 指定该Main Class为全局的唯一入口, 因为前面引入其它工程里面含有Main -->
+					<mainClass>com.agen.WTPApplication</mainClass>
+					<layout>ZIP</layout>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
