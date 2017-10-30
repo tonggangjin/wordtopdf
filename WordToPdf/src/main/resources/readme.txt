@@ -1,1 +1,0 @@
-使用office支持并发利用word另存为得到其它格式软件，使用时，请到resources下面的jacob-1.18-x64.dll放到java运行环境的bin目录
