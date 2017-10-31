@@ -3,13 +3,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.agen.parent</groupId>
+	<groupId>com.agen.boot</groupId>
 	<artifactId>parent</artifactId>
-	<version>0.0.1-parent</version>
+	<version>0.0.1-boot_parent</version>
 	<packaging>pom</packaging>
 
-	<name>parent</name>
-	<description>Parent for All service instance</description>
+	<name>boot_parent</name>
+	<description>boot_parent for All service instance</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -54,11 +54,4 @@
 		</plugins>
 	</build>
 
-
-	<modules>
-		<module>../FileClient</module>
-		<module>../FileServer</module>
-		<module>../WordToPdf</module>
-		<module>../TemplateToWord</module>
-	</modules>
 </project>

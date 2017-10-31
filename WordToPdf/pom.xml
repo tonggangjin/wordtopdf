@@ -12,13 +12,18 @@
 	<description>WordToPdf for All service instance</description>
 
 	<parent>
-		<groupId>com.agen.parent</groupId>
+		<groupId>com.agen.cloud</groupId>
 		<artifactId>parent</artifactId>
-		<version>0.0.1-parent</version>
+		<version>0.0.1-cloud_parent</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
 	<dependencies>
+		<dependency>
+			<groupId>com.agen.client</groupId>
+			<artifactId>FileClient</artifactId>
+			<version>0.0.1-client</version>
+		</dependency>
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
